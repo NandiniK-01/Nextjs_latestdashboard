@@ -80,13 +80,13 @@ const menuItems = [
 
 const Sidebar = async () => {
   const { user } = await auth();
-  console.log(user)
+  console.log(user);
   return (
     <div className={styles.container}>
       <div className={styles.user}>
         <Image
           className={styles.userImage}
-          src={user.img || "/noavatar.png"}
+          src={user.img || "/assets/noavatar.png"}
           alt="/noavatar.png"
           width="50"
           height="50"
